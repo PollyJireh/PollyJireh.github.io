@@ -18,7 +18,7 @@ assets/img/                 Screenshots (WebP) and the social preview image
 ```
 
 ## Fill in your details
-Open `js/config.js`. The email is set to Pollymane11@gmail.com and GitHub to https://github.com/c23-2310-967-ops. Add `linkedin` if you have it. Any value left empty hides its button, so nothing on the site is ever a dead link. When a playable build exists, set `scamSenseDemo` and a "Play demo" button appears.
+Open `js/config.js`. The email is set to Pollymane11@gmail.com and GitHub to https://github.com/PollyJireh. Add `linkedin` if you have it. Any value left empty hides its button, so nothing on the site is ever a dead link. When a playable build exists, set `scamSenseDemo` and a "Play demo" button appears.
 
 ## Run locally
 Double-click `index.html`, or serve the folder (recommended):
