@@ -30,6 +30,10 @@
     <symbol id="i-layout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="7" rx="1"/><rect x="3" y="14" width="9" height="7" rx="1"/><rect x="16" y="14" width="5" height="7" rx="1"/></symbol>
     <symbol id="i-wrench" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94z"/></symbol>
     <symbol id="i-branch" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v12"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></symbol>
+    <symbol id="i-chev-l" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></symbol>
+    <symbol id="i-chev-r" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="m21 3-7 7"/><path d="m3 21 7-7"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
   </defs>
 </svg>
 
@@ -114,18 +118,67 @@
       </div>
       <article class="featured reveal">
         <div class="media">
-          <img src="assets/img/level-5.webp" width="1280" height="720" alt="First-person view of the MacLab computer room in Scam Sense, with hexagonal desk pods and monitors showing emails" loading="lazy" decoding="async">
-          <span class="badge">Unity 6 · C# · Team capstone</span>
+          <div class="frame" data-tilt>
+            <div class="carousel" id="ss-carousel" role="region" aria-roledescription="carousel" aria-label="Scam Sense screenshots">
+              <div class="slides">
+                <img class="slide is-active" src="assets/img/level-1.webp" width="1280" height="720" alt="Level 1, The First Case: a first-person view inside a home" data-cap="Level 1 · The First Case" decoding="async">
+                <img class="slide" src="assets/img/level-2.webp" width="1280" height="720" alt="Level 2, The Investigation: a cybersecurity office with an evidence board" data-cap="Level 2 · The Investigation" loading="lazy" decoding="async">
+                <img class="slide" src="assets/img/level-3.webp" width="1280" height="720" alt="Level 3, The Digital Trap: a dark operations room with case-file screens" data-cap="Level 3 · The Digital Trap" loading="lazy" decoding="async">
+                <img class="slide" src="assets/img/level-4.webp" width="1280" height="720" alt="Level 4, Digital Forensics Lab: a bright lab with evidence stations" data-cap="Level 4 · Digital Forensics Lab" loading="lazy" decoding="async">
+                <img class="slide" src="assets/img/level-5.webp" width="1280" height="720" alt="Level 5, The Compromised Campus Network: a computer lab with hexagonal desk pods" data-cap="Level 5 · The Compromised Campus Network" loading="lazy" decoding="async">
+              </div>
+              <div class="glass-badges" aria-hidden="true">
+                <span class="glass">Unity 6 · C#</span>
+                <span class="glass"><i class="dot"></i>In development</span>
+              </div>
+              <button class="car-btn prev" type="button" aria-label="Previous screenshot"><svg class="ico" aria-hidden="true"><use href="#i-chev-l"/></svg></button>
+              <button class="car-btn next" type="button" aria-label="Next screenshot"><svg class="ico" aria-hidden="true"><use href="#i-chev-r"/></svg></button>
+              <div class="car-foot">
+                <p class="glass car-cap" aria-live="polite"><span class="car-count">1 / 5</span> <span class="car-title">Level 1 · The First Case</span></p>
+                <div class="car-tools">
+                  <div class="dots" role="group" aria-label="Choose screenshot"></div>
+                  <button class="car-btn expand" type="button" aria-label="View screenshot full size"><svg class="ico" aria-hidden="true"><use href="#i-expand"/></svg></button>
+                </div>
+              </div>
+            </div>
+            <span class="glare" aria-hidden="true"></span>
+          </div>
         </div>
         <div class="body">
+          <p class="kicker">Team capstone · 5 levels</p>
           <h3>Investigate it. Decide. Learn why.</h3>
-          <p>A first-person 3D educational game that teaches players to recognise phishing messages, suspicious links and fraudulent digital communication. Players explore rooms, read texts and emails, inspect clues, and answer <em>Scam</em> or <em>Legitimate</em>, then get feedback that explains the warning signs.</p>
-          <ul class="tags" aria-label="Technologies">
-            <li>Unity 6</li><li>C#</li><li>uGUI + TextMeshPro</li><li>Input System</li><li>Supabase</li><li>Git</li>
-          </ul>
-          <p class="status">Status: in development. Playable build planned; screenshots are from the real game.</p>
+          <div class="tabs" data-tabs>
+            <div class="tablist" role="tablist" aria-label="Scam Sense details">
+              <button role="tab" id="tab-ov" aria-controls="panel-ov" aria-selected="true" type="button">Overview</button>
+              <button role="tab" id="tab-gp" aria-controls="panel-gp" aria-selected="false" tabindex="-1" type="button">Gameplay</button>
+              <button role="tab" id="tab-tech" aria-controls="panel-tech" aria-selected="false" tabindex="-1" type="button">Tech &amp; Architecture</button>
+              <span class="tab-ink" aria-hidden="true"></span>
+            </div>
+            <div class="tab-panels">
+              <div role="tabpanel" id="panel-ov" aria-labelledby="tab-ov" tabindex="0" class="is-active">
+                <p>A first-person 3D educational game that teaches players to recognise phishing messages, suspicious links and fraudulent digital communication.</p>
+                <p>Players explore rooms, read texts and emails, inspect clues, and answer <em>Scam</em> or <em>Legitimate</em>. Feedback after every answer explains the warning signs.</p>
+              </div>
+              <div role="tabpanel" id="panel-gp" aria-labelledby="tab-gp" tabindex="0" inert>
+                <ul class="ticks">
+                  <li>Texts on an in-game phone; emails and web pages on working computers</li>
+                  <li>Clickable senders, phrases and links feed an Evidence Notebook</li>
+                  <li>Explained consequences for trusting a scam or raising a false alarm</li>
+                  <li>Fair per-message reading time, stars, XP and score-based room unlocks</li>
+                </ul>
+              </div>
+              <div role="tabpanel" id="panel-tech" aria-labelledby="tab-tech" tabindex="0" inert>
+                <ul class="ticks">
+                  <li><b>Unity 6</b> with the Built-in Render Pipeline and the Input System</li>
+                  <li><b>C#</b> gameplay; level content in data assets, not hard-coded</li>
+                  <li><b>uGUI + TextMeshPro</b> menus, mostly built at runtime</li>
+                  <li><b>Supabase</b> Auth + Postgres over HTTP, with row-level security. Implemented, end-to-end testing in progress</li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <div class="btns">
-            <a class="btn primary" href="projects/scam-sense.html">Read the case study <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn primary glow" href="projects/scam-sense.html">Read the case study <svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
             <a class="btn" data-repo target="_blank" rel="noopener noreferrer"><svg class="ico" aria-hidden="true"><use href="#i-github"/></svg> Source</a>
             <a class="btn" data-demo target="_blank" rel="noopener noreferrer" hidden>Play demo <svg class="ico" aria-hidden="true"><use href="#i-ext"/></svg></a>
           </div>
@@ -214,6 +267,16 @@
     </div>
   </section>
 </main>
+
+<dialog class="lightbox" id="lightbox" aria-label="Scam Sense screenshot viewer">
+  <figure>
+    <img src="assets/img/level-1.webp" width="1280" height="720" alt="">
+    <figcaption></figcaption>
+  </figure>
+  <button class="car-btn prev" type="button" aria-label="Previous screenshot"><svg class="ico" aria-hidden="true"><use href="#i-chev-l"/></svg></button>
+  <button class="car-btn next" type="button" aria-label="Next screenshot"><svg class="ico" aria-hidden="true"><use href="#i-chev-r"/></svg></button>
+  <button class="car-btn close" type="button" aria-label="Close viewer"><svg class="ico" aria-hidden="true"><use href="#i-x"/></svg></button>
+</dialog>
 
 <footer>
   <div class="wrap">
